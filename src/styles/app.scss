@@ -1,0 +1,11 @@
+@import 'reboot';
+@import 'variables';
+@import 'mixins';
+@import 'grid-system';
+@import 'common';
+@import 'responsive';
+
+@import '~locomotive-scroll/dist/locomotive-scroll.min.css';
+
+@import 'pages/home-page';
+@import 'pages/contact-us';

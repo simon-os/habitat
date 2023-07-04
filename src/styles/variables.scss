@@ -1,0 +1,10 @@
+$grey: #B8BEC8;
+$lightgrey: #D4D8DE;
+$darkgrey: #18181A;
+$red: #FF9D9D;
+
+$hover-change-step: 15%;
+$easing-plain: ease-in-out;
+$easing-smooth: cubic-bezier(0.68, 0, 0.28, 0.99);
+$transition-default: 0.2s $easing-plain;
+$transition-smooth: .35s $easing-smooth;

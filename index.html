@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Habitat">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/app.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Habitat</title>
+</head>
+
+<body class="page hidden" data-page="home">
+  
+<header class="header" style="opacity: 0"> <!-- onload opacity -->
+    <div class="container">
+        <div class="header__inner">
+            <a class="logo header__logo" href="index.html">
+                <svg viewBox="0 0 150 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g class="svg-logo-full">
+                        <path d="M0.229815 16.6539C4.05249 15.7962 7.69167 14.4486 11.0789 12.6799V23.898C12.803 21.6447 15.3666 20.8917 17.9601 20.8917C21.87 20.8917 24.0888 23.3503 24.0888 27.9104V39.1498C24.0888 41.159 24.7094 41.9805 26.4035 42.0519C26.5019 42.0603 26.5931 42.1062 26.658 42.1801C26.7229 42.2539 26.7564 42.3499 26.7513 42.4478V42.9449H14.3141L14.3052 42.4478C14.3051 42.3652 14.3303 42.2846 14.3774 42.2166C14.4245 42.1486 14.4913 42.0963 14.569 42.0668C15.7234 41.6471 16.0952 40.769 16.0952 39.1557V28.5831C16.0772 25.8833 15.6064 24.6183 13.6965 24.6183C11.9544 24.6183 11.4027 25.925 11.4027 28.5831V39.1676C11.4027 40.766 11.8015 41.6798 12.9019 42.0757C12.9885 42.1033 13.064 42.1573 13.1179 42.2299C13.1717 42.3026 13.2011 42.3903 13.2018 42.4805V42.9449H0.761582L0.74659 42.4359C0.747126 42.332 0.787335 42.2321 0.859113 42.1564C0.93089 42.0807 1.0289 42.0349 1.13338 42.0281C2.75249 41.9239 3.42412 41.1322 3.42412 39.1557V21.9067C3.40113 21.1433 3.21776 20.3932 2.88576 19.7043C2.55377 19.0154 2.08046 18.403 1.49618 17.9062L0.179901 16.8466L0 16.7215C0.0756974 16.6996 0.152302 16.6771 0.229815 16.6539Z" fill="white"/>
+                        <path d="M76.8391 23.8025L77.5838 24.425C79.4607 25.8657 80.2283 27.3391 80.2283 29.4018V39.0934C80.2283 41.0133 79.6616 41.9182 78.1534 42.07C77.9876 42.089 77.8346 42.1682 77.7239 42.2924C77.6133 42.4165 77.5527 42.5769 77.5538 42.7427V42.9213H90.6866V42.7189C90.6903 42.5582 90.6357 42.4015 90.5328 42.2775C90.4299 42.1534 90.2854 42.0703 90.1259 42.0432C88.7556 41.8348 88.2219 40.927 88.2219 39.0934V21.1974C84.6223 22.5391 80.8055 23.4302 76.8391 23.8025Z" fill="white"/>
+                        <path d="M91.5293 19.8103L92.9443 20.9335C93.9638 21.7342 94.5305 22.7195 94.5545 24.3685L94.5724 36.0812V36.3312C94.5724 40.6769 96.6953 42.9153 100.569 42.9153C102.905 42.9153 103.657 42.6444 104.971 42.1474C104.971 42.1474 102.632 40.8823 102.572 35.8341C102.572 35.346 102.641 21.2937 102.641 21.2937L107.1 21.2907L107.738 19.1387C106.761 19.5614 105.444 19.734 103.702 19.734H102.614V12.4487C99.3208 15.4213 95.5894 17.9119 91.5293 19.8103Z" fill="white"/>
+                        <path d="M128.566 19.8103L129.981 20.9335C131 21.7342 131.567 22.7195 131.591 24.3685L131.609 36.0812V36.3312C131.609 40.6769 133.732 42.9153 137.606 42.9153C139.941 42.9153 140.694 42.6444 142.007 42.1474C142.007 42.1474 139.668 40.8823 139.608 35.8341C139.608 35.346 139.677 21.2937 139.677 21.2937L144.136 21.2907L144.775 19.1387C143.797 19.5614 142.481 19.734 140.739 19.734H139.65V12.4487C136.357 15.4213 132.626 17.9119 128.566 19.8103Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M50.1024 16.6852L50.8401 17.302C52.7171 18.7426 53.4847 20.216 53.4847 22.2847V35.8786C53.8924 41.5667 59.1396 42.9865 61.988 43.3735C63.5641 43.592 65.1636 43.584 66.7374 43.3497C67.9773 43.1339 69.1791 42.7409 70.3054 42.1829C74.1253 40.3612 76.0023 36.8251 76.0023 31.9227C75.9813 25.3416 72.1104 20.8143 67.0492 20.8143C64.7105 20.8143 62.6716 21.7519 61.3523 23.4396V12.543C57.8501 14.4012 54.0746 15.8076 50.1024 16.6852ZM61.3733 32.9467C61.3733 38.8938 61.6282 41.7245 64.3057 41.7245C66.9413 41.7245 67.1961 38.8968 67.1961 32.9467C67.1961 26.9966 66.9833 24.1659 64.3057 24.1659C61.6282 24.1659 61.3733 26.9995 61.3733 32.9467Z" fill="white"/>
+                        <path d="M86.1661 18.7882C85.7509 18.9623 85.3042 19.0501 84.8535 19.0462C84.4095 19.0512 83.9691 18.9678 83.5581 18.801C83.1472 18.6343 82.774 18.3875 82.4606 18.0753C82.1473 17.7631 81.9001 17.3917 81.7336 16.9831C81.5672 16.5745 81.4848 16.137 81.4914 15.6963C81.498 15.2556 81.5935 14.8207 81.7721 14.4172C81.9507 14.0137 82.209 13.6499 82.5315 13.347C82.8541 13.0442 83.2345 12.8086 83.6503 12.654C84.0661 12.4995 84.5088 12.4292 84.9524 12.4472C85.7884 12.4773 86.5828 12.8168 87.1793 13.3991C87.7758 13.9813 88.1312 14.7641 88.1756 15.5934C88.2002 16.0402 88.1323 16.4872 87.9761 16.907C87.8199 17.3267 87.5787 17.7101 87.2674 18.0337C86.9561 18.3572 86.5812 18.614 86.1661 18.7882Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M49.4159 28.842C49.4159 28.842 49.242 37.8222 49.308 38.739C49.4699 40.9119 51.5657 40.4863 51.5657 40.4863C51.4212 41.0533 51.0872 41.5549 50.6182 41.909C49.4459 42.9449 47.7968 42.9449 46.6964 42.9449C44.1808 42.9449 42.4987 41.7721 41.7101 39.5576C39.5933 41.9656 37.2156 43.5551 34.3941 43.5283C29.4528 43.4777 27.8038 39.3105 28.2115 36.6316C28.6763 33.5509 31.024 32.3246 34.586 31.2739C36.6099 30.6756 41.3293 29.8005 41.3293 29.8005V27.0204C41.3293 24.0111 40.6397 22.6389 38.7328 22.6389C37.2186 22.6389 36.1362 23.6688 36.1362 24.9576C36.1362 25.489 36.1656 25.954 36.1902 26.3431C36.2079 26.6232 36.2231 26.864 36.2231 27.062C36.2231 29.1635 34.9248 30.4523 33.1108 30.4523C31.3808 30.4523 30.2564 29.2915 30.2564 27.5323C30.2564 23.9248 33.9894 20.9185 39.9861 20.9185C43.3142 20.9185 45.9528 21.8114 47.5539 23.2729C49.242 24.8624 49.4159 26.2643 49.4159 28.842ZM41.3323 33.7V31.6013C38.7028 32.3008 36.5799 33.7116 36.7029 36.9144C36.7448 38.0395 37.3025 39.4385 39.0806 39.3433C41.3325 39.2281 41.3325 37.2201 41.3323 33.7Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M127.472 38.7777C127.403 37.858 127.577 28.8807 127.577 28.8807C127.577 26.303 127.403 24.8981 125.718 23.3086C124.117 21.8471 121.478 20.9453 118.147 20.9453C112.15 20.9453 108.418 23.9545 108.418 27.5591C108.418 29.3212 109.542 30.4791 111.272 30.4791C113.089 30.4791 114.387 29.1903 114.387 27.0888C114.387 26.8924 114.372 26.6523 114.354 26.3727L114.354 26.3724V26.372C114.33 25.9824 114.3 25.5162 114.3 24.9844C114.3 23.6956 115.38 22.6687 116.897 22.6687C118.801 22.6687 119.493 24.0409 119.493 27.0472V29.8273C119.493 29.8273 114.771 30.7024 112.75 31.3006C109.188 32.3543 106.84 33.5807 106.373 36.6584C105.968 39.3373 107.614 43.5045 112.555 43.5551C115.38 43.5848 117.754 41.9924 119.874 39.5844C120.651 41.8168 122.336 42.9746 124.846 42.9746C125.946 42.9746 127.595 42.9746 128.77 41.9418C129.237 41.5861 129.57 41.085 129.715 40.519C129.715 40.519 127.631 40.9565 127.472 38.7777ZM119.496 33.7387C119.497 37.2587 119.497 39.2638 117.245 39.382C115.464 39.4742 114.906 38.0782 114.864 36.9501C114.759 33.7593 116.858 32.3454 119.496 31.634V33.7387Z" fill="white"/>
+                        <path d="M148.061 41.2346C147.662 41.4029 147.233 41.4886 146.799 41.4864C145.951 41.4737 145.142 41.127 144.551 40.5225C143.96 39.9179 143.635 39.1051 143.648 38.2628C143.661 37.4205 144.01 36.6177 144.619 36.031C145.228 35.4443 146.047 35.1218 146.895 35.1344C147.7 35.1631 148.464 35.4897 149.038 36.05C149.612 36.6103 149.954 37.3636 149.996 38.1616C150.018 38.5913 149.952 39.021 149.801 39.4244C149.651 39.8278 149.419 40.1965 149.119 40.5077C148.82 40.819 148.46 41.0663 148.061 41.2346Z" fill="white"/>
+                    </g>
+
+                    <g class="svg-logo-letter">
+                        <path class="dot" d="M86.1661 18.7882C85.7509 18.9623 85.3042 19.0501 84.8535 19.0462C84.4095 19.0512 83.9691 18.9678 83.5581 18.801C83.1472 18.6343 82.774 18.3875 82.4606 18.0753C82.1473 17.7631 81.9001 17.3917 81.7336 16.9831C81.5672 16.5745 81.4848 16.137 81.4914 15.6963C81.498 15.2556 81.5935 14.8207 81.7721 14.4172C81.9507 14.0137 82.209 13.6499 82.5315 13.347C82.8541 13.0442 83.2345 12.8086 83.6503 12.654C84.0661 12.4995 84.5088 12.4292 84.9524 12.4472C85.7884 12.4773 86.5828 12.8168 87.1793 13.3991C87.7758 13.9813 88.1312 14.7641 88.1756 15.5934C88.2002 16.0402 88.1323 16.4872 87.9761 16.907C87.8199 17.3267 87.5787 17.7101 87.2674 18.0337C86.9561 18.3572 86.5812 18.614 86.1661 18.7882Z" fill="white"/>
+                        <path class="letter" d="M0.229815 16.6539C4.05249 15.7962 7.69167 14.4486 11.0789 12.6799V23.898C12.803 21.6447 15.3666 20.8917 17.9601 20.8917C21.87 20.8917 24.0888 23.3503 24.0888 27.9104V39.1498C24.0888 41.159 24.7094 41.9805 26.4035 42.0519C26.5019 42.0603 26.5931 42.1062 26.658 42.1801C26.7229 42.2539 26.7564 42.3499 26.7513 42.4478V42.9449H14.3141L14.3052 42.4478C14.3051 42.3652 14.3303 42.2846 14.3774 42.2166C14.4245 42.1486 14.4913 42.0963 14.569 42.0668C15.7234 41.6471 16.0952 40.769 16.0952 39.1557V28.5831C16.0772 25.8833 15.6064 24.6183 13.6965 24.6183C11.9544 24.6183 11.4027 25.925 11.4027 28.5831V39.1676C11.4027 40.766 11.8015 41.6798 12.9019 42.0757C12.9885 42.1033 13.064 42.1573 13.1179 42.2299C13.1717 42.3026 13.2011 42.3903 13.2018 42.4805V42.9449H0.761582L0.74659 42.4359C0.747126 42.332 0.787335 42.2321 0.859113 42.1564C0.93089 42.0807 1.0289 42.0349 1.13338 42.0281C2.75249 41.9239 3.42412 41.1322 3.42412 39.1557V21.9067C3.40113 21.1433 3.21776 20.3932 2.88576 19.7043C2.55377 19.0154 2.08046 18.403 1.49618 17.9062L0.179901 16.8466L0 16.7215C0.0756974 16.6996 0.152302 16.6771 0.229815 16.6539Z" fill="white"/>
+                    </g>
+                </svg>
+            </a>
+
+            <a class="header__button button" href="contact-us.html">Hire us</a>
+        </div>
+    </div>
+</header>
+
+<div class="cases unselectable">
+    <div class="case cases__item">
+        <picture>
+            <img src="assets/img/cases/case-1.jpg" alt="Case">
+        </picture>
+    </div>
+
+    <div class="case cases__item">
+        <picture>
+            <img src="assets/img/cases/case-2.jpg" alt="Case">
+        </picture>
+    </div>
+
+    <div class="case cases__item">
+        <picture>
+            <img src="assets/img/cases/case-3.jpg" alt="Case">
+        </picture>
+    </div>
+
+    <div class="case cases__item">
+        <picture>
+            <img src="assets/img/cases/case-4.jpg" alt="Case">
+        </picture>
+    </div>
+
+    <div class="case cases__item">
+        <picture>
+            <img src="assets/img/cases/case-5.jpg" alt="Case">
+        </picture>
+    </div>
+
+    <div class="case cases__item">
+        <picture>
+            <img src="assets/img/cases/case-6.jpg" alt="Case">
+        </picture>
+    </div>
+
+    <div class="case cases__item">
+        <picture>
+            <img src="assets/img/cases/case-7.jpg" alt="Case">
+        </picture>
+    </div>
+
+    <div class="case cases__item">
+        <picture>
+            <img src="assets/img/cases/case-8.jpg" alt="Case">
+        </picture>
+    </div>
+
+    <div class="case cases__item">
+        <picture>
+            <img src="assets/img/cases/case-9.jpg" alt="Case">
+        </picture>
+    </div>
+
+    <div class="case cases__item">
+        <picture>
+            <img src="assets/img/cases/case-10.jpg" alt="Case">
+        </picture>
+    </div>
+</div>
+
+<main class="page-content" data-scroll-container>
+    <section class="hero-screen">
+        <div class="container">
+            <div class="hero-screen__inner">
+                <h1 class="hero-screen__heading section-heading section-heading--xl">
+                    Hey! We help to shape the future human habitat by designing innovation today.
+                </h1>
+
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col col--pl">
+                        <p class="hero-screen__text text-lg">
+                            We start collaborating with you when you have just an idea and keep doing
+                            so when you are a 4B dollars unicorn.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="project portfolio__project">
+                        <a class="project__link link-absolute" href=""></a>
+
+                        <div class="project__image image-responsive-wrapper">
+                            <picture class="image-responsive">
+                                <img class="lazy" data-src="assets/img/portfolio/Fendi.jpg" alt="Fendi">
+                            </picture>
+
+                            <picture class="image-responsive project__image-hover">
+                                <img class="lazy" data-src="assets/img/portfolio/Fendi-hover.jpg" alt="Fendi-hover">
+                            </picture>
+                        </div>
+
+                        <div class="project__inner">
+                            <a class="project__title" href="">My Fav</a>
+                            <h3 class="project__descr heading">
+                                <a href="">Social marketplace with image recognition shopping</a>
+                            </h3>
+
+                            <div class="project__buttons-row">
+                                <div class="pill-button project__pill-button">
+                                    App design
+                                    <span class="layer"><span>App design</span></span>
+                                </div>
+
+                                <div class="pill-button project__pill-button">
+                                    Branding
+                                    <span class="layer"><span>Branding</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col--pl">
+                    <div class="project portfolio__project">
+                        <a class="project__link link-absolute" href=""></a>
+
+                        <div class="project__image image-responsive-wrapper">
+                            <picture class="image-responsive">
+                                <img class="lazy" data-src="assets/img/portfolio/Anamiva.jpg" alt="Anamiva">
+                            </picture>
+
+                            <picture class="image-responsive project__image-hover">
+                                <img class="lazy" data-src="assets/img/portfolio/Anamiva-hover.jpg" alt="Anamiva-hover">
+                            </picture>
+                        </div>
+
+                        <div class="project__inner">
+                            <a class="project__title" href="">Anamiva</a>
+                            <h3 class="project__descr heading">
+                                <a href="">E-commerce website for gut supplements</a>
+                            </h3>
+
+                            <div class="project__buttons-row">
+                                <div class="pill-button project__pill-button">
+                                    Web design
+                                    <span class="layer"><span>Web design</span></span>
+                                </div>
+
+                                <div class="pill-button project__pill-button">
+                                    Branding
+                                    <span class="layer"><span>Branding</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col--pr">
+                    <div class="project portfolio__project">
+                        <a class="project__link link-absolute" href=""></a>
+
+                        <div class="project__image image-responsive-wrapper">
+                            <picture class="image-responsive">
+                                <img class="lazy" data-src="assets/img/portfolio/Hennii.jpg" alt="Hennii">
+                            </picture>
+
+                            <picture class="image-responsive project__image-hover">
+                                <img class="lazy" data-src="assets/img/portfolio/Hennii-hover.jpg" alt="Hennii-hover">
+                            </picture>
+                        </div>
+
+                        <div class="project__inner">
+                            <a class="project__title" href="">Hennii</a>
+                            <h3 class="project__descr heading">
+                                <a href="">Online banking for Gen Zers</a>
+                            </h3>
+
+                            <div class="project__buttons-row">
+                                <div class="pill-button project__pill-button">
+                                    Web design
+                                    <span class="layer"><span>Web design</span></span>
+                                </div>
+
+                                <div class="pill-button project__pill-button">
+                                    Branding
+                                    <span class="layer"><span>Branding</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col--pl-sm">
+                    <div class="project portfolio__project">
+                        <a class="project__link link-absolute" href=""></a>
+
+                        <div class="project__image image-responsive-wrapper">
+                            <picture class="image-responsive">
+                                <img class="lazy" data-src="assets/img/portfolio/Freiheit.jpg" alt="Freiheit">
+                            </picture>
+
+                            <picture class="image-responsive project__image-hover">
+                                <img class="lazy" data-src="assets/img/portfolio/Freiheit-hover.jpg" alt="Freiheit-hover">
+                            </picture>
+                        </div>
+
+                        <div class="project__inner">
+                            <a class="project__title" href="">Freiheit</a>
+                            <h3 class="project__descr heading">
+                                <a href="">Visual identity for urban fashion brand</a>
+                            </h3>
+
+                            <div class="project__buttons-row">
+                                <div class="pill-button project__pill-button">
+                                    Branding
+                                    <span class="layer"><span>Branding</span></span>
+                                </div>
+
+                                <div class="pill-button project__pill-button">
+                                    Stylescape
+                                    <span class="layer"><span>Stylescape</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="project portfolio__project">
+                        <a class="project__link link-absolute" href=""></a>
+
+                        <div class="project__image image-responsive-wrapper">
+                            <picture class="image-responsive">
+                                <img class="lazy" data-src="assets/img/portfolio/Fit.do.jpg" alt="Fit.do">
+                            </picture>
+
+                            <picture class="image-responsive project__image-hover">
+                                <img class="lazy" data-src="assets/img/portfolio/Fit.do-hover.jpg" alt="Fit.do">
+                            </picture>
+                        </div>
+
+                        <div class="project__inner">
+                            <a class="project__title" href="">Fit.do</a>
+                            <h3 class="project__descr heading">
+                                <a href="">Mobile app design for fitness startup</a>
+                            </h3>
+
+                            <div class="project__buttons-row">
+                                <div class="pill-button project__pill-button">
+                                    App design
+                                    <span class="layer"><span>App design</span></span>
+                                </div>
+
+                                <div class="pill-button project__pill-button">
+                                    Branding
+                                    <span class="layer"><span>Branding</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col--pl">
+                    <div class="project portfolio__project">
+                        <a class="project__link link-absolute" href=""></a>
+
+                        <div class="project__image image-responsive-wrapper">
+                            <picture class="image-responsive">
+                                <img class="lazy" data-src="assets/img/portfolio/Hopin.jpg" alt="Hopin">
+                            </picture>
+
+                            <picture class="image-responsive project__image-hover">
+                                <img class="lazy" data-src="assets/img/portfolio/Hopin-hover.jpg" alt="Hopin-hover">
+                            </picture>
+                        </div>
+
+                        <div class="project__inner">
+                            <a class="project__title" href="">Hopin</a>
+                            <h3 class="project__descr heading">
+                                <a href="">Marketing website for all-in-one event platform</a>
+                            </h3>
+
+                            <div class="project__buttons-row">
+                                <div class="pill-button project__pill-button">
+                                    Web design
+                                    <span class="layer"><span>Web design</span></span>
+                                </div>
+
+                                <div class="pill-button project__pill-button">
+                                    Branding
+                                    <span class="layer"><span>Branding</span></span>
+                                </div>
+
+                                <div class="pill-button project__pill-button">
+                                    Marketing
+                                    <span class="layer"><span>Marketing</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="brands">
+        <div class="container">
+            <h2 class="brands__heading section-heading text-center">
+                Trusted by companies worldwide
+            </h2>
+
+            <div class="brands__inner">
+                <picture class="brands__item">
+                    <img class="lazy" data-src="assets/img/brands/angellist.svg" alt="AngelList">
+                </picture>
+
+                <picture class="brands__item">
+                    <img class="lazy" data-src="assets/img/brands/hopin.svg" alt="Hopin">
+                </picture>
+
+                <picture class="brands__item">
+                    <img class="lazy" data-src="assets/img/brands/streamyard.svg" alt="StreamYard">
+                </picture>
+
+                <picture class="brands__item">
+                    <img class="lazy" data-src="assets/img/brands/fendi.svg" alt="Fendi">
+                </picture>
+
+                <picture class="brands__item">
+                    <img class="lazy" data-src="assets/img/brands/oppo.svg" alt="Oppo">
+                </picture>
+
+                <picture class="brands__item">
+                    <img class="lazy" data-src="assets/img/brands/littlespoon.svg" alt="Little Spoon">
+                </picture>
+
+                <picture class="brands__item">
+                    <img class="lazy" data-src="assets/img/brands/pause.svg" alt="Pause">
+                </picture>
+
+                <picture class="brands__item">
+                    <img class="lazy" data-src="assets/img/brands/cgtrader.svg" alt="cgtrader">
+                </picture>
+
+                <picture class="brands__item">
+                    <img class="lazy" data-src="assets/img/brands/dogiz.svg" alt="Dogiz">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-team">
+        <div class="container">
+            <h2 class="our-team__heading section-heading section-heading--lg">
+                Meet the team.
+            </h2>
+
+            <div class="our-team__inner pl">
+                <div class="card our-team__member">
+                    <div class="card__image image-responsive-wrapper">
+                        <picture class="image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Serhiy-Trofymchuk.jpg" src="assets/img/team/LQ/Serhiy-Trofymchuk.jpg" alt="Serhiy Trofymchuk">
+                        </picture>
+
+                        <picture class="card__image-hover image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Serhiy-Trofymchuk-hover.jpg" src="assets/img/team/LQ/Serhiy-Trofymchuk-hover.jpg" alt="Serhiy Trofymchuk">
+                        </picture>
+                    </div>
+
+                    <div class="card__inner">
+                        <h3 class="card__heading heading">Serhiy Trofymchuk</h3>
+
+                        <div class="card__descr">
+                            <span class="card__descr-text">Product & Service Designer</span>
+                            <span class="card__descr-hover">Cocktails, the King of Aperoland 🍹</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card our-team__member">
+                    <div class="card__image image-responsive-wrapper">
+                        <picture class="image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Helen-Prokopovych.jpg" src="assets/img/team/LQ/Helen-Prokopovych.jpg" alt="Helen Prokopovych">
+                        </picture>
+
+                        <picture class="card__image-hover image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Helen-Prokopovych-hover.jpg" src="assets/img/team/LQ/Helen-Prokopovych-hover.jpg" alt="Helen Prokopovych">
+                        </picture>
+                    </div>
+
+                    <div class="card__inner">
+                        <h3 class="card__heading heading">Helen Prokopovych</h3>
+
+                        <div class="card__descr">
+                            <span class="card__descr-text">CEO, POC</span>
+                            <span class="card__descr-hover">Healthy food and good mood 🥑</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card our-team__member">
+                    <div class="card__image image-responsive-wrapper">
+                        <picture class="image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Alina-Zhaivoron.jpg" src="assets/img/team/LQ/Alina-Zhaivoron.jpg" alt="Alina Zhaivoron">
+                        </picture>
+
+                        <picture class="card__image-hover image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Alina-Zhaivoron-hover.jpg" src="assets/img/team/LQ/Alina-Zhaivoron-hover.jpg" alt="Alina Zhaivoron">
+                        </picture>
+                    </div>
+
+                    <div class="card__inner">
+                        <h3 class="card__heading heading">Alina Zhaivoron</h3>
+
+                        <div class="card__descr">
+                            <span class="card__descr-text">Art-director</span>
+                            <span class="card__descr-hover">Harry Potter collector, knows all the spells ⚡️</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card our-team__member">
+                    <div class="card__image image-responsive-wrapper">
+                        <picture class="image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Anna-Hnap.jpg" src="assets/img/team/LQ/Anna-Hnap.jpg" alt="Anna Hnap">
+                        </picture>
+
+                        <picture class="card__image-hover image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Anna-Hnap-hover.jpg" src="assets/img/team/LQ/Anna-Hnap-hover.jpg" alt="Anna Hnap">
+                        </picture>
+                    </div>
+
+                    <div class="card__inner">
+                        <h3 class="card__heading heading">Anna Hnap</h3>
+
+                        <div class="card__descr">
+                            <span class="card__descr-text">Product & Service Designer</span>
+                            <span class="card__descr-hover">Good at talking not only with people 🐶</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card our-team__member">
+                    <div class="card__image image-responsive-wrapper">
+                        <picture class="image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Leonid-Maksymyk.jpg" src="assets/img/team/LQ/Leonid-Maksymyk.jpg" alt="Leonid Maksymyk">
+                        </picture>
+
+                        <picture class="card__image-hover image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Leonid-Maksymyk-hover.jpg" src="assets/img/team/LQ/Leonid-Maksymyk-hover.jpg" alt="Leonid Maksymyk">
+                        </picture>
+                    </div>
+
+                    <div class="card__inner">
+                        <h3 class="card__heading heading">Leonid Maksymyk</h3>
+
+                        <div class="card__descr">
+                            <span class="card__descr-text">UX / UI Designer</span>
+                            <span class="card__descr-hover">Yes, I really need all these board games 🎲</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card our-team__member">
+                    <div class="card__image image-responsive-wrapper">
+                        <picture class="image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Ellen-Demchuk.jpg" src="assets/img/team/LQ/Ellen-Demchuk.jpg" alt="Ellen Demchuk">
+                        </picture>
+
+                        <picture class="card__image-hover image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Ellen-Demchuk-hover.jpg" src="assets/img/team/LQ/Ellen-Demchuk-hover.jpg" alt="Ellen Demchuk">
+                        </picture>
+                    </div>
+
+                    <div class="card__inner">
+                        <h3 class="card__heading heading">Ellen Demchuk</h3>
+
+                        <div class="card__descr">
+                            <span class="card__descr-text">Product & Service Designer</span>
+                            <span class="card__descr-hover">Creating beauty not only in digital 🎨</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card our-team__member">
+                    <div class="card__image image-responsive-wrapper">
+                        <picture class="image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Roksolana-Slobodianiuk.jpg" src="assets/img/team/LQ/Roksolana-Slobodianiuk.jpg" alt="Roksolana Slobodianiuk">
+                        </picture>
+
+                        <picture class="card__image-hover image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Roksolana-Slobodianiuk-hover.jpg" src="assets/img/team/LQ/Roksolana-Slobodianiuk-hover.jpg" alt="Roksolana Slobodianiuk">
+                        </picture>
+                    </div>
+
+                    <div class="card__inner">
+                        <h3 class="card__heading heading">Roksolana Slobodianiuk</h3>
+
+                        <div class="card__descr">
+                            <span class="card__descr-text">Web & Graphic Designer</span>
+                            <span class="card__descr-hover">Manga & anime, PSP games, and cozy bed 🍥</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card our-team__member">
+                    <div class="card__image image-responsive-wrapper">
+                        <picture class="image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Daria-Volkoshovets.jpg" src="assets/img/team/LQ/Daria-Volkoshovets.jpg" alt="Daria Volkoshovets">
+                        </picture>
+
+                        <picture class="card__image-hover image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Daria-Volkoshovets-hover.jpg" src="assets/img/team/LQ/Daria-Volkoshovets-hover.jpg" alt="Daria Volkoshovets">
+                        </picture>
+                    </div>
+
+                    <div class="card__inner">
+                        <h3 class="card__heading heading">Daria Volkoshovets</h3>
+
+                        <div class="card__descr">
+                            <span class="card__descr-text">Marketing Designer</span>
+                            <span class="card__descr-hover">Yoga lover, knows all the asanas 🌿</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card our-team__member">
+                    <div class="card__image image-responsive-wrapper">
+                        <picture class="image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Valentina-Oliiarnyk.jpg" src="assets/img/team/LQ/Valentina-Oliiarnyk.jpg" alt="Valentina Oliiarnyk">
+                        </picture>
+
+                        <picture class="card__image-hover image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Valentina-Oliiarnyk-hover.jpg" src="assets/img/team/LQ/Valentina-Oliiarnyk-hover.jpg" alt="Valentina Oliiarnyk">
+                        </picture>
+                    </div>
+
+                    <div class="card__inner">
+                        <h3 class="card__heading heading">Valentina Oliiarnyk</h3>
+
+                        <div class="card__descr">
+                            <span class="card__descr-text">Project Manager</span>
+                            <span class="card__descr-hover">Juggling projects and dumbbells like a pro 💪</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card our-team__member">
+                    <div class="card__image image-responsive-wrapper">
+                        <picture class="image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Dmytro-Dedukh.jpg" src="assets/img/team/LQ/Dmytro-Dedukh.jpg" alt="Dmytro Dedukh">
+                        </picture>
+
+                        <picture class="card__image-hover image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Dmytro-Dedukh-hover.jpg" src="assets/img/team/LQ/Dmytro-Dedukh-hover.jpg" alt="Dmytro Dedukh">
+                        </picture>
+                    </div>
+
+                    <div class="card__inner">
+                        <h3 class="card__heading heading">Dmytro Dedukh</h3>
+
+                        <div class="card__descr">
+                            <span class="card__descr-text">UX / UI Designer</span>
+                            <span class="card__descr-hover">In love with extreme, speed, cars and racing 🏎</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card our-team__member">
+                    <div class="card__image image-responsive-wrapper">
+                        <picture class="image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Antonina-Diadenchuk.jpg" src="assets/img/team/LQ/Antonina-Diadenchuk.jpg" alt="Antonina Diadenchuk">
+                        </picture>
+
+                        <picture class="card__image-hover image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Antonina-Diadenchuk-hover.jpg" src="assets/img/team/LQ/Antonina-Diadenchuk-hover.jpg" alt="Antonina Diadenchuk">
+                        </picture>
+                    </div>
+
+                    <div class="card__inner">
+                        <h3 class="card__heading heading">Antonina Diadenchuk</h3>
+
+                        <div class="card__descr">
+                            <span class="card__descr-text">Marketing Designer</span>
+                            <span class="card__descr-hover">Run, eat, design, sleep, repeat 🥇</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card our-team__member">
+                    <div class="card__image image-responsive-wrapper">
+                        <picture class="image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Valerie-Biletska.jpg" src="assets/img/team/LQ/Valerie-Biletska.jpg" alt="Valerie Biletska">
+                        </picture>
+
+                        <picture class="card__image-hover image-responsive">
+                            <img class="lazy" data-src="assets/img/team/Valerie-Biletska-hover.jpg" src="assets/img/team/LQ/Valerie-Biletska-hover.jpg" alt="Valerie Biletska">
+                        </picture>
+                    </div>
+
+                    <div class="card__inner">
+                        <h3 class="card__heading heading">Valerie Biletska</h3>
+
+                        <div class="card__descr">
+                            <span class="card__descr-text">Marketing Designer</span>
+                            <span class="card__descr-hover">Dance like nobody's watching 💃</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2 class="services__heading section-heading section-heading--lg">
+                Our services.
+            </h2>
+
+            <div class="wrapper pl">
+                <div class="services__inner">
+                    <div class="services-item">
+                        <div class="services-item__inner">
+                            <div class="services-item__title section-heading">
+                                Extended design team
+                            </div>
+
+                            <div class="services-item__descr text-lg">
+                                <p>We merge with your team to provide our expertise in web, product, brand,
+                                    graphic design and solve your business challenges.</p>
+                            </div>
+                        </div>
+
+                        <picture class="services-item__image image-responsive-wrapper unselectable">
+                            <img class="image-responsive lazy" data-src="assets/img/cases/case-9.jpg" alt="Case">
+                        </picture>
+                    </div>
+
+                    <div class="services-item">
+                        <div class="services-item__inner">
+                            <div class="services-item__title section-heading">
+                                Improve your product
+                            </div>
+
+                            <div class="services-item__descr text-lg">
+                                <p>In the fast-changing world, digital products and identities need to be
+                                    constantly adjusted to the new user's needs. Our team will provide tailored
+                                    custom solutions for your existing product.</p>
+                            </div>
+                        </div>
+
+                        <picture class="services-item__image image-responsive-wrapper unselectable">
+                            <img class="image-responsive lazy" data-src="assets/img/cases/case-2.jpg" alt="Case">
+                        </picture>
+                    </div>
+
+                    <div class="services-item">
+                        <div class="services-item__inner">
+                            <div class="services-item__title section-heading">
+                                Create a new product
+                            </div>
+
+                            <div class="services-item__descr text-lg">
+                                <p>There is a long path between an idea and a product. Our team
+                                    will take you through all the necessary stages of discovery and design
+                                    to create an MVP.</p>
+                            </div>
+                        </div>
+
+                        <picture class="services-item__image image-responsive-wrapper unselectable">
+                            <img class="image-responsive lazy" data-src="assets/img/cases/case-7.jpg" alt="Case">
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="services__images">
+                    <picture class="services__image unselectable">
+                        <img class="lazy" data-src="assets/img/cases/case-9.jpg" alt="Case">
+                    </picture>
+
+                    <picture class="services__image unselectable">
+                        <img class="lazy" data-src="assets/img/cases/case-2.jpg" alt="Case">
+                    </picture>
+
+                    <picture class="services__image unselectable">
+                        <img class="lazy" data-src="assets/img/cases/case-7.jpg" alt="Case">
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+        <section class="pill-buttons services__pill-buttons">
+            <div class="container">
+                <h2 class="pill-buttons__heading section-heading">
+                    Product design
+                </h2>
+            </div>
+
+            <div class="container pill-buttons__container">
+                <div class="pill-buttons__inner">
+                    <div class="pill-buttons__item pill-button pill-button--lg">
+                        User interview & testing
+                        <span class="layer"><span>User interview & testing</span></span>
+                    </div>
+
+                    <div class="pill-buttons__item pill-button pill-button--lg">
+                        User & market research
+                        <span class="layer"><span>User & market research</span></span>
+                    </div>
+
+                    <div class="pill-buttons__item pill-button pill-button--lg">
+                        User journey maps & user flows
+                        <span class="layer"><span>User journey maps & user flows</span></span>
+                    </div>
+
+                    <div class="pill-buttons__item pill-button pill-button--lg">
+                        UX/UI & Accessibility audits
+                        <span class="layer"><span>UX/UI & Accessibility audits</span></span>
+                    </div>
+
+                    <div class="pill-buttons__item pill-button pill-button--lg order">
+                        UI design
+                        <span class="layer"><span>UI design</span></span>
+                    </div>
+
+                    <div class="pill-buttons__item pill-button pill-button--lg">
+                        E-commerce analytics & optimization
+                        <span class="layer"><span>E-commerce analytics & optimization</span></span>
+                    </div>
+
+                    <div class="pill-buttons__item pill-button pill-button--lg order">
+                        Design systems
+                        <span class="layer"><span>Design systems</span></span>
+                    </div>
+
+                    <div class="pill-buttons__item pill-button pill-button--lg">
+                        Lo-fi & Hi-fi wireframing
+                        <span class="layer"><span>Lo-fi & Hi-fi wireframing</span></span>
+                    </div>
+
+                    <div class="pill-buttons__item pill-button pill-button--lg">
+                        Information Architecture
+                        <span class="layer"><span>Information Architecture</span></span>
+                    </div>
+
+                    <div class="pill-buttons__item pill-button pill-button--lg">
+                        Rapid prototyping
+                        <span class="layer"><span>Rapid prototyping</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pill-buttons services__pill-buttons">
+            <div class="container">
+                <h2 class="pill-buttons__heading section-heading">
+                    Communication design
+                </h2>
+            </div>
+
+            <div class="container pill-buttons__container">
+                <div class="pill-buttons__inner">
+                    <div class="pill-buttons__item pill-button pill-button--lg">
+                        Logo design
+                        <span class="layer"><span>Logo design</span></span>
+                    </div>
+
+                    <div class="pill-buttons__item pill-button pill-button--lg">
+                        Stylescape
+                        <span class="layer"><span>Stylescape</span></span>
+                    </div>
+
+                    <div class="pill-buttons__item pill-button pill-button--lg">
+                        Visual identity
+                        <span class="layer"><span>Visual identity</span></span>
+                    </div>
+
+                    <div class="pill-buttons__item pill-button pill-button--lg">
+                        Web design
+                        <span class="layer"><span>Web design</span></span>
+                    </div>
+
+                    <div class="pill-buttons__item pill-button pill-button--lg">
+                        Graphic design
+                        <span class="layer"><span>Graphic design</span></span>
+                    </div>
+
+                    <div class="pill-buttons__item pill-button pill-button--lg">
+                        Motion design
+                        <span class="layer"><span>Motion design</span></span>
+                    </div>
+
+                    <div class="pill-buttons__item pill-button pill-button--lg">
+                        Investment decks
+                        <span class="layer"><span>Investment decks</span></span>
+                    </div>
+
+                    <div class="pill-buttons__item pill-button pill-button--lg">
+                        Marketing assets design
+                        <span class="layer"><span>Marketing assets design</span></span>
+                    </div>
+
+                    <div class="pill-buttons__item pill-button pill-button--lg">
+                        Illustrations
+                        <span class="layer"><span>Illustrations</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="manifesto">
+        <div class="container">
+            <h2 class="manifesto__heading section-heading section-heading--lg">
+                Our Manifesto.
+            </h2>
+
+            <div class="manifesto__inner">
+                <div class="manifesto__item">
+                    <div class="manifesto__item-inner">
+                        <p>Habitat is a home for creative souls, united by a single goal - to
+                            contribute to the development of our city, country, and planet.</p>
+
+                        <div class="manifesto__item-square">
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="manifesto__item">
+                    <div class="manifesto__item-inner">
+                        <p>We approach design with flexibility. There is nothing stable nowadays.
+                            Thus we adjust our design approach to every client, every project, and every task.</p>
+
+                        <div class="manifesto__item-square">
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="manifesto__item">
+                    <div class="manifesto__item-inner">
+                        <p>We are not just service providers, we are partners. <br>
+                            We partner with startups and product companies who believe that design
+                            can solve any user problem. We help them to serve their users and get better.</p>
+
+                        <div class="manifesto__item-square">
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="manifesto__item">
+                    <div class="manifesto__item-inner">
+                        <p>We work with the products we believe in. <br>
+                            Today we contribute to the ideas, that will take the lead tomorrow.</p>
+
+                        <div class="manifesto__item-square">
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="manifesto-images">
+        <div class="manifesto-images__container container">
+            <div class="manifesto-images__inner">
+                <div class="manifesto-images__col-left">
+                    <div class="manifesto-images__col">
+                        <picture class="image image-responsive-wrapper unselectable">
+                            <img class="image-responsive lazy" data-src="assets/img/manifesto/1.jpg" alt="Manifesto image">
+                        </picture>
+
+                        <picture class="image image-responsive-wrapper unselectable">
+                            <img class="image-responsive lazy" data-src="assets/img/manifesto/2.jpg" alt="Manifesto image">
+                        </picture>
+                    </div>
+
+                    <div class="manifesto-images__col">
+                        <picture class="image image-responsive-wrapper unselectable">
+                            <img class="image-responsive lazy" data-src="assets/img/manifesto/3.jpg" alt="Manifesto image">
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="manifesto-images__col-right">
+                    <div class="manifesto-images__row">
+                        <p>We strive to work with people who are interested in what they are doing
+                            and are ready to experiment. Design is all about trying something new.
+                            We value those who are not afraid of changes.</p>
+
+                        <picture class="image image-responsive-wrapper unselectable">
+                            <img class="image-responsive lazy" data-src="assets/img/manifesto/4.jpg" alt="Manifesto image">
+                        </picture>
+                    </div>
+
+                    <div class="manifesto-images__row">
+                        <picture class="image image-responsive-wrapper unselectable">
+                            <img class="image-responsive lazy" data-src="assets/img/manifesto/5.jpg" alt="Manifesto image">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="awards">
+        <div class="container">
+            <div class="awards__inner">
+                <h2 class="awards__heading section-heading section-heading--lg">
+                    Our Awards.
+                </h2>
+
+                <div class="awards__items">
+                    <picture class="awards__item unselectable">
+                        <img class="lazy" data-src="assets/img/badges/Badge-2020.svg" alt="Badge 2020">
+                    </picture>
+
+                    <picture class="awards__item unselectable">
+                        <img class="lazy" data-src="assets/img/badges/Badge-2021.svg" alt="Badge 2021">
+                    </picture>
+
+                    <picture class="awards__item unselectable">
+                        <img class="lazy" data-src="assets/img/badges/Badge-behance.svg" alt="Badge behance">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats__inner">
+                <div class="stats-item">
+                    <div class="stats-item__number">16</div>
+                    <div class="stats-item__descr">team members</div>
+                </div>
+
+                <div class="stats-item">
+                    <div class="stats-item__number">250+</div>
+                    <div class="stats-item__descr">delivered projects</div>
+                </div>
+
+                <div class="stats-item">
+                    <div class="stats-item__number">5 years</div>
+                    <div class="stats-item__descr">of experience</div>
+                </div>
+
+                <div class="stats-item">
+                    <div class="stats-item__number">1</div>
+                    <div class="stats-item__descr">unicorn grown</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <div class="faq__inner">
+                <h2 class="faq__heading section-heading">
+                    We have already answered your questions.
+                </h2>
+
+                <div class="faq__items" id="faq-collapse-group">
+                    <div class="faq-item collapse" data-collapse>
+                        <div class="faq-item__inner">
+                            <div class="faq-item__question collapse__toggle" data-toggle>
+                                <span>Where are we based?</span>
+
+                                <i class="faq-item__icon cross-icon"></i>
+                            </div>
+
+                            <div class="collapse__content" data-content>
+                                <div class="faq-item__answer">
+                                    <p>Great question! The first step is to get in touch by filling out our contact
+                                        form, which you’ll find here. We usually start our projects with a discovery
+                                        call, followed by a short exploration phase where we work with you to define
+                                        the project scope and services we can help you with. We’ll then proceed to
+                                        share our cost estimate, prepare a statement of work and schedule in kickoff
+                                        calls with our teams. Once the paperwork is complete and the deposit payment
+                                        is settled, we get to work!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item collapse" data-collapse>
+                        <div class="faq-item__inner">
+                            <div class="faq-item__question collapse__toggle" data-toggle>
+                                <span>What is the price of your services?</span>
+
+                                <i class="faq-item__icon cross-icon"></i>
+                            </div>
+
+                            <div class="collapse__content" data-content>
+                                <div class="faq-item__answer">
+                                    <p>Great question! The first step is to get in touch by filling out our contact
+                                        form, which you’ll find here. We usually start our projects with a discovery
+                                        call, followed by a short exploration phase where we work with you to define
+                                        the project scope and services we can help you with. We’ll then proceed to
+                                        share our cost estimate, prepare a statement of work and schedule in kickoff
+                                        calls with our teams. Once the paperwork is complete and the deposit payment
+                                        is settled, we get to work!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item collapse" data-collapse>
+                        <div class="faq-item__inner">
+                            <div class="faq-item__question collapse__toggle" data-toggle>
+                                <span>How do I start a project with you?</span>
+
+                                <i class="faq-item__icon cross-icon"></i>
+                            </div>
+
+                            <div class="collapse__content" data-content>
+                                <div class="faq-item__answer">
+                                    <p>Great question! The first step is to get in touch by filling out our contact
+                                        form, which you’ll find here. We usually start our projects with a discovery
+                                        call, followed by a short exploration phase where we work with you to define
+                                        the project scope and services we can help you with. We’ll then proceed to
+                                        share our cost estimate, prepare a statement of work and schedule in kickoff
+                                        calls with our teams. Once the paperwork is complete and the deposit payment
+                                        is settled, we get to work!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item collapse" data-collapse>
+                        <div class="faq-item__inner">
+                            <div class="faq-item__question collapse__toggle" data-toggle>
+                                <span>Could you help with the development as well?</span>
+
+                                <i class="faq-item__icon cross-icon"></i>
+                            </div>
+
+                            <div class="collapse__content" data-content>
+                                <div class="faq-item__answer">
+                                    <p>Great question! The first step is to get in touch by filling out our contact
+                                        form, which you’ll find here. We usually start our projects with a discovery
+                                        call, followed by a short exploration phase where we work with you to define
+                                        the project scope and services we can help you with. We’ll then proceed to
+                                        share our cost estimate, prepare a statement of work and schedule in kickoff
+                                        calls with our teams. Once the paperwork is complete and the deposit payment
+                                        is settled, we get to work!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item collapse" data-collapse>
+                        <div class="faq-item__inner">
+                            <div class="faq-item__question collapse__toggle" data-toggle>
+                                <span>We already have branding, will you be able to work with the given guidelines?</span>
+
+                                <i class="faq-item__icon cross-icon"></i>
+                            </div>
+
+                            <div class="collapse__content" data-content>
+                                <div class="faq-item__answer">
+                                    <p>Great question! The first step is to get in touch by filling out our contact
+                                        form, which you’ll find here. We usually start our projects with a discovery
+                                        call, followed by a short exploration phase where we work with you to define
+                                        the project scope and services we can help you with. We’ll then proceed to
+                                        share our cost estimate, prepare a statement of work and schedule in kickoff
+                                        calls with our teams. Once the paperwork is complete and the deposit payment
+                                        is settled, we get to work!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item collapse" data-collapse>
+                        <div class="faq-item__inner">
+                            <div class="faq-item__question collapse__toggle" data-toggle>
+                                <span>Which tools do you use?</span>
+
+                                <i class="faq-item__icon cross-icon"></i>
+                            </div>
+
+                            <div class="collapse__content" data-content>
+                                <div class="faq-item__answer">
+                                    <p>Great question! The first step is to get in touch by filling out our contact
+                                        form, which you’ll find here. We usually start our projects with a discovery
+                                        call, followed by a short exploration phase where we work with you to define
+                                        the project scope and services we can help you with. We’ll then proceed to
+                                        share our cost estimate, prepare a statement of work and schedule in kickoff
+                                        calls with our teams. Once the paperwork is complete and the deposit payment
+                                        is settled, we get to work!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item collapse" data-collapse>
+                        <div class="faq-item__inner">
+                            <div class="faq-item__question collapse__toggle" data-toggle>
+                                <span>What types of user research do you practice?</span>
+
+                                <i class="faq-item__icon cross-icon"></i>
+                            </div>
+
+                            <div class="collapse__content" data-content>
+                                <div class="faq-item__answer">
+                                    <p>Great question! The first step is to get in touch by filling out our contact
+                                        form, which you’ll find here. We usually start our projects with a discovery
+                                        call, followed by a short exploration phase where we work with you to define
+                                        the project scope and services we can help you with. We’ll then proceed to
+                                        share our cost estimate, prepare a statement of work and schedule in kickoff
+                                        calls with our teams. Once the paperwork is complete and the deposit payment
+                                        is settled, we get to work!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item collapse" data-collapse>
+                        <div class="faq-item__inner">
+                            <div class="faq-item__question collapse__toggle" data-toggle>
+                                <span>What if I want to extend my own design team with one of your experts?</span>
+
+                                <i class="faq-item__icon cross-icon"></i>
+                            </div>
+
+                            <div class="collapse__content" data-content>
+                                <div class="faq-item__answer">
+                                    <p>Great question! The first step is to get in touch by filling out our contact
+                                        form, which you’ll find here. We usually start our projects with a discovery
+                                        call, followed by a short exploration phase where we work with you to define
+                                        the project scope and services we can help you with. We’ll then proceed to
+                                        share our cost estimate, prepare a statement of work and schedule in kickoff
+                                        calls with our teams. Once the paperwork is complete and the deposit payment
+                                        is settled, we get to work!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item collapse" data-collapse>
+                        <div class="faq-item__inner">
+                            <div class="faq-item__question collapse__toggle" data-toggle>
+                                <span>Are my designs secure?</span>
+
+                                <i class="faq-item__icon cross-icon"></i>
+                            </div>
+
+                            <div class="collapse__content" data-content>
+                                <div class="faq-item__answer">
+                                    <p>Great question! The first step is to get in touch by filling out our contact
+                                        form, which you’ll find here. We usually start our projects with a discovery
+                                        call, followed by a short exploration phase where we work with you to define
+                                        the project scope and services we can help you with. We’ll then proceed to
+                                        share our cost estimate, prepare a statement of work and schedule in kickoff
+                                        calls with our teams. Once the paperwork is complete and the deposit payment
+                                        is settled, we get to work!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-section">
+        <div class="footer-section__inner" data-scroll data-scroll-speed="-8">
+            <div class="container">
+                <h2 class="footer-section__heading section-heading section-heading--xl">
+                    Have an idea in mind? <br>
+                    <a class="footer-section__link" href="contact-us.html">Let's talk.</a>
+                </h2>
+            </div>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__info">
+                            <a class="footer__email" href="mailto:hello@hbtat.agency">
+                                <span>hello@hbtat.agency</span>
+                            </a>
+
+                            <a class="footer__legal" href="">
+                                Legal Information
+                            </a>
+                        </div>
+
+                        <nav class="footer__nav">
+                            <ul class="footer__nav-list">
+                                <li><a href="">Medium</a></li>
+                                <li><a href="">Behance</a></li>
+                                <li><a href="">Dribbble</a></li>
+                            </ul>
+
+                            <ul class="footer__nav-list">
+                                <li><a href="">Clutch</a></li>
+                                <li><a href="">Instagram</a></li>
+                                <li><a href="">Linked In</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+</main>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('hidden');
+  });
+</script>
+<script src="assets/js/app.min.js"></script>
+
+</body>
+</html>

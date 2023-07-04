@@ -1,0 +1,291 @@
+.contact-us {
+  padding-top: 4.5rem;
+  padding-bottom: 9.02rem;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &__heading {
+    margin-bottom: 1.2em;
+  }
+
+  &__col-left {
+    width: auto;
+  }
+
+  &__col-right {
+    width: auto;
+    margin-top: 9rem;
+
+    .contact-us__heading {
+      margin-bottom: 1.15em;
+    }
+  }
+
+  &__email {
+    font-size: 1rem;
+    line-height: 1.5em;
+  }
+
+  &__locations {
+    margin-top: 4.6rem;
+
+    &-heading {
+      margin-bottom: 0.73em;
+
+      font-weight: 300;
+      font-size: 1.25rem;
+      line-height: 1.4em;
+    }
+  }
+
+  &__location {
+    margin-bottom: 2rem;
+
+    &-title {
+      margin-bottom: 0.23em;
+
+      color: #fff;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1.5em;
+    }
+
+    &-descr {
+      color: $grey;
+    }
+  }
+
+  .checkbox__text,
+  .radio-button__text {
+    color: $grey;
+  }
+}
+
+.contact-form {
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__section {
+    margin-bottom: 3.6rem;
+  }
+
+  &__section-heading {
+    margin-bottom: 0.95rem;
+
+    font-size: 1.25rem;
+    line-height: 1.4em;
+    font-weight: 400;
+  }
+
+  &__item {
+    padding-left: 0.3rem;
+    margin-bottom: 0.5rem;
+
+    .checkbox__text,
+    .radio-button__text {
+      font-size: 1rem;
+      line-height: 1.5em;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &__inputs {
+    margin-top: 0.34rem;
+  }
+
+  &__input {
+    margin-bottom: 1rem;
+  }
+
+  &__submit-button {
+    margin-top: 1.2rem;
+
+    padding-top: 0.93rem;
+    padding-bottom: 0.68rem;
+    padding-left: 2.525rem;
+    padding-right: 1.2625rem;
+
+    font-size: 1rem;
+    line-height: 1.45em;
+
+    &::before {
+      //width: 1rem;
+      //height: 1rem;
+      width: 16px;
+      height: 16px;
+      left: 1rem;
+    }
+  }
+
+  .file-info__item {
+    margin-top: 1.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .contact-us {
+
+    &__inner {
+      flex-direction: row;
+    }
+
+    &__col-left {
+      width: 55%;
+    }
+
+    &__col-right {
+      width: 35%;
+      margin-top: 0;
+    }
+  }
+
+  .contact-form {
+
+    &__inner {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    &__section {
+      max-width: 46%;
+      padding-right: 1.5rem;
+    }
+
+    &__row {
+      flex-direction: row;
+
+      .contact-form__input {
+        //max-width: 40%;
+        max-width: 45%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .contact-us {
+
+    &__email {
+      font-size: 1.25rem;
+      line-height: 1.6em;
+    }
+
+    &__location {
+
+      &-title {
+        font-size: 1.125rem;
+        line-height: 1.7778em;
+      }
+    }
+
+    &__locations {
+
+      &-heading {
+        font-size: 2rem;
+        line-height: 1.5em;
+      }
+    }
+  }
+
+  .contact-form {
+
+    &__section {
+      padding-right: 0;
+    }
+
+    &__section-heading {
+      font-size: 1.5rem;
+      line-height: 1.5em;
+    }
+
+    &__item {
+
+      .checkbox__text,
+      .radio-button__text {
+        font-size: 1.25rem;
+        line-height: 1.6em;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .contact-us {
+    padding-top: 8.2rem;
+    padding-bottom: 6.92rem;
+
+    &__col-left {
+      width: 42.727%;
+    }
+
+    &__col-right {
+      width: 42.727%;
+
+      .contact-us__heading {
+        margin-bottom: 0.58em;
+      }
+    }
+
+    &__heading {
+      margin-bottom: 1.09em;
+    }
+
+    &__locations {
+      margin-top: 7.5rem;
+
+      &-heading {
+        margin-bottom: 0.46em;
+      }
+    }
+  }
+
+  .contact-form {
+
+    &__section {
+      margin-bottom: 8rem;
+
+      &-heading {
+        margin-bottom: 1.39rem;
+      }
+    }
+
+    &__input {
+      margin-bottom: 0.52rem;
+    }
+
+    &__item {
+      margin-bottom: 1.25rem;
+      padding-left: 0;
+    }
+
+    &__submit-button {
+      margin-top: 2.65rem;
+    }
+
+    .file-info__item {
+      margin-top: 1.3rem;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+
+  .contact-form__row .contact-form__input {
+    max-width: 43%;
+  }
+}

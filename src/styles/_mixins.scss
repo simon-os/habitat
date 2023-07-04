@@ -1,0 +1,140 @@
+@mixin icon {
+  display: inline-block;
+  flex-shrink: 0;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin default-background {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin button-mixin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  user-select: none;
+
+  color: inherit;
+}
+
+@mixin list-unstyled {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+@mixin icon-hover {
+  filter: saturate(1.5);
+  box-shadow: 0 0 7px rgba(0, 0, 0, .08);
+}
+
+@mixin background-picture {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@mixin link-hover-light($link-color) {
+
+  &:hover {
+    color: lighten($link-color, $hover-change-step);
+    text-decoration: none;
+  }
+
+  &:active {
+    color: lighten($link-color, $hover-change-step * 2);
+  }
+}
+
+@mixin link-hover-dark($link-color) {
+
+  &:hover {
+    color: darken($link-color, $hover-change-step);
+    text-decoration: none;
+  }
+
+  &:active {
+    color: darken($link-color, $hover-change-step * 2);
+  }
+}
+
+@mixin hover-underline($color) {
+  $text-color: $color;
+
+  span {
+    z-index: 1;
+    position: relative;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    width: 50%;
+    height: 0.02em;
+
+    position: absolute;
+    bottom: 0.21em;
+
+    background-color: $text-color;
+    transition: width $transition-default;
+  }
+
+  &::before {
+    left: 0;
+  }
+  &::after {
+    right: 0;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    width: 0;
+  }
+}
+
+@mixin hover-underline-bottom($color, $bottom) {
+  $text-color: $color;
+
+  span {
+    z-index: 1;
+    position: relative;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    width: 50%;
+    height: 0.02em;
+
+    position: absolute;
+    bottom: $bottom;
+    z-index: 0;
+
+    background-color: $text-color;
+    transition: width $transition-default;
+  }
+
+  &::before {
+    left: 0;
+  }
+  &::after {
+    right: 0;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    width: 0;
+  }
+}

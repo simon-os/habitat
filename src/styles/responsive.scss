@@ -1,0 +1,443 @@
+/* --- RESPONSIVE --- */
+@media (min-width: 375px) {
+  .pill-button--lg {
+    font-size: 1rem;
+  }
+
+  .button {
+    &::before {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  .radio-button {
+    &__field {
+      width: 14px;
+      height: 14px;
+
+      &::after {
+        width: 6px;
+        height: 6px;
+      }
+    }
+  }
+
+  .checkbox {
+    &__field {
+      width: 14px;
+      height: 14px;
+
+      &::after {
+        width: 8px;
+        height: 6px;
+      }
+    }
+  }
+}
+
+@media (min-width: 525px) {
+  html {
+    font-size: 3.05343vw;
+  }
+}
+
+@media (min-width: 640px) {
+  body {
+    line-height: 1.667em;
+  }
+
+  .button {
+    padding-top: 0.5625rem;
+    padding-bottom: 0.4375rem;
+  }
+
+  .footer {
+    padding-bottom: 3.75rem;
+
+    &__info {
+      justify-content: space-between;
+    }
+
+    &__email {
+      font-size: 0.75rem;
+      line-height: 1.667em;
+    }
+
+    &__inner {
+      flex-direction: row;
+      padding-top: 1.5rem;
+    }
+
+    &__nav {
+      max-width: 31.7%;
+      margin-top: 0;
+
+      &-list {
+        width: 3.7rem;
+
+        li {
+          margin-bottom: 0.55rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 2.08333vw;
+  }
+}
+
+@media (min-width: 812px) {
+  html {
+    font-size: 1.97044vw;
+  }
+
+  .pl {
+    padding-left: 14rem;
+  }
+
+  .input {
+    box-shadow: inset 0 -0.125rem 0 #FFFFFF;
+  }
+
+  .form-input--error {
+    .form-input__label {
+      color: $red;
+    }
+
+    .input {
+      box-shadow: inset 0 -0.125rem 0 $red;
+    }
+  }
+
+  .radio-button__field {
+    &::after {
+      --inner-size: 66.7%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 1.33445vw;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+  }
+
+  .section-heading {
+    font-size: 2.5rem;
+    line-height: 1.2em;
+
+    &--lg {
+      font-size: 4rem;
+      line-height: 1.125em;
+    }
+
+    &--xl {
+      font-size: 4.5rem;
+      line-height: 1.111em;
+    }
+  }
+
+  .pill-button {
+    $padding: 0.5625rem 0.8125rem 0.4375rem;
+    padding: $padding;
+    line-height: 1.6666em;
+
+    .layer span {
+      padding: $padding;
+    }
+
+    &--lg {
+      $padding: 0.9375rem 2.125rem 0.75rem;
+      padding: $padding;
+      font-size: 1.5rem;
+
+      .layer {
+        transition: width .23s $easing-plain;
+
+        span {
+          padding: $padding;
+        }
+      }
+    }
+  }
+
+  .pill-buttons {
+    &__container {
+      padding-right: 3.3rem;
+      padding-left: 3.3rem;
+    }
+
+    &__heading {
+      margin-bottom: .9em;
+    }
+
+    &__item {
+      margin: 0.75rem;
+    }
+  }
+
+  .card {
+    max-width: 26rem;
+
+    &__image {
+      padding-top: 115.5%;
+    }
+
+    &__inner {
+      padding-top: 13px;
+    }
+
+    &__heading {
+      margin-bottom: 0.2em;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 1.11111vw;
+  }
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 0.833331vw;
+  }
+
+  body {
+    font-size: 1rem;
+    line-height: 1.75em;
+  }
+
+  .text-lg {
+    font-size: 1.25rem;
+    line-height: 1.6em;
+  }
+
+  .logo {
+    width: 9.375rem;
+    height: 3.5rem;
+
+    svg {
+      left: 0;
+    }
+  }
+
+  .header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    &__logo {
+      max-width: none;
+      max-height: none;
+    }
+  }
+
+  .button {
+    padding-top: 0.9375rem;
+    padding-bottom: 0.6875rem;
+    padding-left: 2.625rem;
+    padding-right: 1.5625rem;
+
+    &::before {
+      width: 16px;
+      height: 16px;
+      left: 1rem;
+    }
+  }
+
+  .pill-button {
+    $padding: 0.625rem 1.0625rem;
+    padding: $padding;
+
+    font-size: 0.875em;
+    line-height: 1.43em;
+
+    .layer span {
+      padding: $padding;
+    }
+
+    &--lg {
+      $padding: 1.125rem 2.1875rem 0.8125rem;
+      padding: $padding;
+      font-size: 2rem;
+
+      .layer span {
+        padding: $padding;
+      }
+    }
+  }
+
+  .pill-buttons {
+    &__container {
+      padding-right: 4.3rem;
+      padding-left: 4.3rem;
+    }
+
+    &__heading {
+      margin-bottom: 0.82em;
+    }
+  }
+
+  .heading {
+    font-size: 2rem;
+    line-height: 1.5em;
+  }
+
+  .section-heading {
+    font-size: 3.5rem;
+    line-height: 1.142em;
+
+    &--lg {
+      font-size: 5.5rem;
+      line-height: 1.0909em;
+    }
+
+    &--xl {
+      font-size: 6rem;
+      line-height: 1.08333em;
+    }
+  }
+
+  .card {
+    max-width: 33rem;
+
+    &__inner {
+      padding-top: 1rem;
+    }
+
+    &__heading {
+      margin-bottom: 0.3em;
+    }
+
+    &__image {
+      padding-top: 121.213%;
+    }
+  }
+
+  .footer {
+    padding-bottom: 5.55rem;
+
+    &__inner {
+      padding-top: 1.8rem;
+    }
+
+    &__email {
+      font-size: 1rem;
+      line-height: 1.5em;
+    }
+
+    &__legal {
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+
+    &__nav {
+      max-width: 36.3%;
+
+      &-list {
+        width: 4.3rem;
+
+        li {
+          margin-bottom: 0.95rem;
+          font-size: 0.875rem;
+          line-height: 1.428em;
+        }
+      }
+    }
+  }
+
+  .checkbox {
+    &__field {
+      border-width: 0.125rem;
+    }
+  }
+
+  .radio-button {
+    &__field {
+      width: 16px;
+      height: 16px;
+      border-width: 0.125rem;
+    }
+  }
+
+  .input {
+    padding-bottom: 0.9rem;
+    font-size: 1.25rem;
+    line-height: 1.6em;
+  }
+
+  .form-input {
+    &__label {
+      line-height: 1.333em;
+    }
+
+    &__message {
+      margin-top: 0.6rem;
+    }
+  }
+}
+
+@media (min-width: 2150px) {
+  .card {
+    max-width: 47vh;
+
+    &__image {
+      padding-top: 56vh;
+    }
+  }
+
+  .radio-button {
+    &__field {
+      width: 18px;
+      height: 18px;
+
+      &::after {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+
+  .checkbox {
+    &__field {
+      width: 18px;
+      height: 18px;
+
+      &::after {
+        width: 12px;
+        height: 8px;
+      }
+    }
+  }
+}
+
+@media (max-height: 1000px) {
+  .card {
+    max-width: 41.5vh;
+
+    &__image {
+      padding-top: 55vh;
+      min-height: 18.2375rem;
+    }
+  }
+}
+
+@media (min-width: 2150px) and (max-height: 1250px) {
+  .card {
+    max-width: 39vh;
+
+    &__image {
+      padding-top: 48vh;
+    }
+  }
+}
+/* --- /RESPONSIVE --- */
